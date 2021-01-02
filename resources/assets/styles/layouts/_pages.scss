@@ -1,0 +1,457 @@
+html {
+  background: #f0f0f0;
+  font-family: serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.top {
+  background-color: #f0f0f0;
+  height: 700px;
+  padding-top: 240px;
+  position: relative;
+
+  &_ttl {
+    text-align: center;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 1px;
+    height: 80px;
+    background-color: #a0a052;
+  }
+}
+
+.works {
+  background: #1f1f1f;
+  color: #fff;
+  position: relative;
+  padding: 70px 0 160px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 80px;
+    background-color: #d0d089;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 1px;
+    height: 80px;
+    background-color: #a0a052;
+  }
+
+  &_ttl {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  &_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1296px;
+    margin: 94px auto 0;
+
+    .post:not(:nth-child(3n + 1)) {
+      margin-left: 72px;
+    }
+
+    img {
+      width: 360px;
+      height: auto;
+    }
+  }
+}
+
+.work {
+  &_head {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  &_img {
+    line-height: 1;
+  }
+
+  &_ttl a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+  }
+
+  &_date {
+    font-size: 10px;
+  }
+
+  &_shopTtl {
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  &_shopList {
+    list-style: none;
+    line-height: 1;
+  }
+
+  &_shopItem {
+    display: inline-block;
+
+    & + & {
+      margin-left: 4px;
+    }
+  }
+
+  &_shopLink {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 30%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border-bottom: solid 1px #fff;
+    }
+
+    &::after {
+      content: "";
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      border-bottom: dotted 1px #fff;
+    }
+  }
+
+  &_description {
+    font-size: 13px;
+    margin-top: 40px;
+
+    p {
+      line-height: 2.25;
+      letter-spacing: 0.04em;
+    }
+
+    p + p {
+      margin-top: 2em;
+    }
+  }
+}
+
+.single {
+  position: relative;
+
+  &_title {
+    font-size: 16px;
+    display: inline-block;
+  }
+
+  .work_shop {
+    margin-top: 36px;
+  }
+
+  &_header {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 300px;
+      position: absolute;
+      background: #f0f0f0;
+      z-index: 1;
+    }
+  }
+
+  &_headerIn {
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+
+  .work_img {
+    text-align: center;
+    padding-top: 48px;
+  }
+
+  .work_img img {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.1);
+    width: 800px;
+    height: auto;
+  }
+
+  &_special {
+    color: #fff;
+    text-decoration: none;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+
+  .credit {
+    margin-left: 28px;
+
+    dt {
+      font-size: 10px;
+    }
+
+    dd {
+      font-size: 12px;
+    }
+
+    dd + dt {
+      margin-top: 16px;
+    }
+  }
+
+  &_content {
+    width: 800px;
+    margin: 48px auto;
+  }
+}
+
+.about {
+  background-color: #f0f0f0;
+  position: relative;
+  padding-top: 70px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 80px;
+    background-color: #d0d089;
+  }
+
+  &_ttl {
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  &_cont {
+    display: flex;
+    padding: 140px 0 260px;
+    justify-content: center;
+  }
+
+  &_desc {
+    width: 728px;
+    line-height: 2.25;
+    letter-spacing: 0.05em;
+    text-align: justify;
+    margin-left: 100px;
+    color: #2b2525;
+  }
+}
+
+.member {
+  background: #1f1f1f;
+  color: #fff;
+  position: relative;
+  padding: 160px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 80px;
+    background-color: #d0d089;
+  }
+
+  &_info {
+    display: flex;
+  }
+
+  &_info_1 {
+    background-color: #ccc;
+    width: 150px;
+    height: 150px;
+  }
+
+  &_info_2 {
+    padding-left: 24px;
+  }
+
+  &_ttl {
+    text-align: center;
+  }
+
+  &_position {
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+  }
+
+  &_name {
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 1;
+    margin-top: 16px;
+  }
+
+  &_list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 1296px;
+    margin: 94px auto 0;
+  }
+
+  &_item {
+    & + & {
+      margin-left: 60px;
+    }
+  }
+
+  &_linkList {
+    list-style: none;
+    line-height: 1;
+    margin-top: 12px;
+  }
+
+  &_linkItem {
+    display: inline-block;
+    position: relative;
+    line-height: 1;
+
+    & + & {
+      margin-left: 16px;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        left: -0.75em;
+        top: 50%;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  &_link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+  &_desc {
+    line-height: 2;
+    font-size: 14px;
+    margin-top: 42px;
+  }
+}
+
+.single-post {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.nav_home {
+  position: fixed;
+  top: 48px;
+  left: 48px;
+  color: #000;
+  z-index: 100;
+}
+
+.nav_pages {
+  position: fixed;
+  top: 48px;
+  right: 48px;
+  color: #000;
+  z-index: 100;
+}
+
+.nav_next {
+  position: fixed;
+  right: 16px;
+  top: 50%;
+  z-index: 101;
+}
+
+.nav_prev {
+  position: fixed;
+  left: 16px;
+  top: 50%;
+  z-index: 102;
+}
+
+.nav_prevIn,
+.nav_nextIn {
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+
+  a {
+    color: rgba(255, 255, 255, 0.6);
+    transform: rotateZ(90deg);
+    display: block;
+    text-decoration: none;
+    letter-spacing: 0.25em;
+  }
+}
+
+.nav {
+  &_pagesIn {
+    position: relative;
+    right: -48px;
+  }
+
+  &_about {
+    top: 16px;
+    right: 16px;
+    color: #999;
+    text-transform: uppercase;
+    transform: rotateZ(90deg);
+    display: block;
+    text-decoration: none;
+    letter-spacing: 0.25em;
+  }
+
+  &_list {
+    list-style-type: none;
+  }
+}
+
+一方の形容詞のみ用いる
+
+メアドパスワード
+suimenMail2020
+
+mogrify -auto-orient -resize 1000x1000^ -quality 85 +repage -strip -gravity center -crop 1000x1000+0+0 *.jpg *.jpg 
+
+サイトトップ
+ピックアップ商品
+サブ商品（サムネまで）
+
+https://drive.google.com/drive/folders/1l6-TZTfnkamFXeH7a5hajQD9W5CKaP_6
+「【BARTH】シャワーヘッド_株式会社TWO」〜「2WAYコンフォート_株式会社ベネクス」まで選出とリサイズ完了しました。
+製品画像や画質荒いものは公式サイトから取り直しています。各「resize」フォルダ内に連番で格納してますのでご確認のほどよろしくお願いいたします。
